@@ -1,4 +1,4 @@
-package no.ssb.lds.core.persistence.neo4j;
+package io.descoped.lds.core.persistence.neo4j;
 
 import org.neo4j.driver.Result;
 import org.neo4j.driver.Value;

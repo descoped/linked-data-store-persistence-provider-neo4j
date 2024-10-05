@@ -3,7 +3,7 @@
 
     <test name="default">
         <classes>
-            <class name="no.ssb.lds.core.persistence.neo4j.Neo4jPersistenceTest" />
+            <class name="io.descoped.lds.core.persistence.neo4j.Neo4jPersistenceTest"/>
         </classes>
     </test>
 

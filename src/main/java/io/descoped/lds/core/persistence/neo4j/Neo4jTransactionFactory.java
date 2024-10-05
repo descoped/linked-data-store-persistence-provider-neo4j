@@ -1,8 +1,8 @@
-package no.ssb.lds.core.persistence.neo4j;
+package io.descoped.lds.core.persistence.neo4j;
 
-import no.ssb.lds.api.persistence.PersistenceException;
-import no.ssb.lds.api.persistence.Transaction;
-import no.ssb.lds.api.persistence.TransactionFactory;
+import io.descoped.lds.api.persistence.PersistenceException;
+import io.descoped.lds.api.persistence.Transaction;
+import io.descoped.lds.api.persistence.TransactionFactory;
 import org.neo4j.driver.AccessMode;
 import org.neo4j.driver.Driver;
 import org.neo4j.driver.Session;

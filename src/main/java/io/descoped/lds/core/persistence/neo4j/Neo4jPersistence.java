@@ -1,23 +1,23 @@
-package no.ssb.lds.core.persistence.neo4j;
+package io.descoped.lds.core.persistence.neo4j;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import io.descoped.lds.api.json.JsonNavigationPath;
+import io.descoped.lds.api.persistence.DocumentKey;
+import io.descoped.lds.api.persistence.PersistenceDeletePolicy;
+import io.descoped.lds.api.persistence.PersistenceException;
+import io.descoped.lds.api.persistence.Transaction;
+import io.descoped.lds.api.persistence.flattened.FlattenedDocument;
+import io.descoped.lds.api.persistence.flattened.FlattenedDocumentLeafNode;
+import io.descoped.lds.api.persistence.json.FlattenedDocumentToJson;
+import io.descoped.lds.api.persistence.json.JsonDocument;
+import io.descoped.lds.api.persistence.reactivex.Range;
+import io.descoped.lds.api.persistence.reactivex.RxJsonPersistence;
+import io.descoped.lds.api.persistence.streaming.FragmentType;
+import io.descoped.lds.api.specification.Specification;
 import io.reactivex.Completable;
 import io.reactivex.Flowable;
 import io.reactivex.Maybe;
 import io.reactivex.Single;
-import no.ssb.lds.api.json.JsonNavigationPath;
-import no.ssb.lds.api.persistence.DocumentKey;
-import no.ssb.lds.api.persistence.PersistenceDeletePolicy;
-import no.ssb.lds.api.persistence.PersistenceException;
-import no.ssb.lds.api.persistence.Transaction;
-import no.ssb.lds.api.persistence.flattened.FlattenedDocument;
-import no.ssb.lds.api.persistence.flattened.FlattenedDocumentLeafNode;
-import no.ssb.lds.api.persistence.json.FlattenedDocumentToJson;
-import no.ssb.lds.api.persistence.json.JsonDocument;
-import no.ssb.lds.api.persistence.reactivex.Range;
-import no.ssb.lds.api.persistence.reactivex.RxJsonPersistence;
-import no.ssb.lds.api.persistence.streaming.FragmentType;
-import no.ssb.lds.api.specification.Specification;
 import org.neo4j.driver.Record;
 import org.neo4j.driver.Value;
 import org.neo4j.driver.types.Node;
@@ -31,7 +31,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-import static no.ssb.lds.core.persistence.neo4j.Neo4jCreationalPatternFactory.hashOf;
+import static io.descoped.lds.core.persistence.neo4j.Neo4jCreationalPatternFactory.hashOf;
 
 public class Neo4jPersistence implements RxJsonPersistence {
 

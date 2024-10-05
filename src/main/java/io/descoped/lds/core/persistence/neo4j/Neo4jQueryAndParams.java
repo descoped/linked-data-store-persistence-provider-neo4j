@@ -1,4 +1,4 @@
-package no.ssb.lds.core.persistence.neo4j;
+package io.descoped.lds.core.persistence.neo4j;
 
 import java.util.Map;
 

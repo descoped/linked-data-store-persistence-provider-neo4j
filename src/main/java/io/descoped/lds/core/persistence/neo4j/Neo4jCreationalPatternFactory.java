@@ -1,12 +1,12 @@
-package no.ssb.lds.core.persistence.neo4j;
+package io.descoped.lds.core.persistence.neo4j;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import no.ssb.lds.api.json.JsonNavigationPath;
-import no.ssb.lds.api.persistence.DocumentKey;
-import no.ssb.lds.api.persistence.json.JsonDocument;
-import no.ssb.lds.api.specification.Specification;
-import no.ssb.lds.api.specification.SpecificationElement;
-import no.ssb.lds.api.specification.SpecificationElementType;
+import io.descoped.lds.api.json.JsonNavigationPath;
+import io.descoped.lds.api.persistence.DocumentKey;
+import io.descoped.lds.api.persistence.json.JsonDocument;
+import io.descoped.lds.api.specification.Specification;
+import io.descoped.lds.api.specification.SpecificationElement;
+import io.descoped.lds.api.specification.SpecificationElementType;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;

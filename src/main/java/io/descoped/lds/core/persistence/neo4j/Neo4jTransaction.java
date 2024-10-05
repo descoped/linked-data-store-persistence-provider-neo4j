@@ -1,9 +1,9 @@
-package no.ssb.lds.core.persistence.neo4j;
+package io.descoped.lds.core.persistence.neo4j;
 
+import io.descoped.lds.api.persistence.Transaction;
+import io.descoped.lds.api.persistence.TransactionStatistics;
 import io.reactivex.BackpressureStrategy;
 import io.reactivex.Flowable;
-import no.ssb.lds.api.persistence.Transaction;
-import no.ssb.lds.api.persistence.TransactionStatistics;
 import org.neo4j.driver.Record;
 import org.neo4j.driver.Result;
 import org.neo4j.driver.Session;

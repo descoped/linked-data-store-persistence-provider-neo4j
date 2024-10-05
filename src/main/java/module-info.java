@@ -1,8 +1,8 @@
-import no.ssb.lds.api.persistence.PersistenceInitializer;
-import no.ssb.lds.core.persistence.neo4j.Neo4jInitializer;
+import io.descoped.lds.api.persistence.PersistenceInitializer;
+import io.descoped.lds.core.persistence.neo4j.Neo4jInitializer;
 
-module no.ssb.lds.persistence.neo4j {
-    requires no.ssb.lds.persistence.api;
+module io.descoped.lds.persistence.neo4j {
+    requires io.descoped.lds.persistence.api;
     requires com.fasterxml.jackson.core;
     requires com.fasterxml.jackson.databind;
     requires org.neo4j.driver;

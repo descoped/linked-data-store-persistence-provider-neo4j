@@ -1,11 +1,11 @@
-package no.ssb.lds.core.persistence.neo4j;
+package io.descoped.lds.core.persistence.neo4j;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import no.ssb.lds.api.persistence.DocumentKey;
-import no.ssb.lds.api.persistence.json.JsonDocument;
-import no.ssb.lds.api.specification.Specification;
-import no.ssb.lds.api.specification.SpecificationElementType;
+import io.descoped.lds.api.persistence.DocumentKey;
+import io.descoped.lds.api.persistence.json.JsonDocument;
+import io.descoped.lds.api.specification.Specification;
+import io.descoped.lds.api.specification.SpecificationElementType;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -18,12 +18,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import static no.ssb.lds.core.persistence.neo4j.SpecificationBuilder.arrayNode;
-import static no.ssb.lds.core.persistence.neo4j.SpecificationBuilder.arrayRefNode;
-import static no.ssb.lds.core.persistence.neo4j.SpecificationBuilder.createSpecificationAndRoot;
-import static no.ssb.lds.core.persistence.neo4j.SpecificationBuilder.objectNode;
-import static no.ssb.lds.core.persistence.neo4j.SpecificationBuilder.refNode;
-import static no.ssb.lds.core.persistence.neo4j.SpecificationBuilder.stringNode;
+import static io.descoped.lds.core.persistence.neo4j.SpecificationBuilder.arrayNode;
+import static io.descoped.lds.core.persistence.neo4j.SpecificationBuilder.arrayRefNode;
+import static io.descoped.lds.core.persistence.neo4j.SpecificationBuilder.createSpecificationAndRoot;
+import static io.descoped.lds.core.persistence.neo4j.SpecificationBuilder.objectNode;
+import static io.descoped.lds.core.persistence.neo4j.SpecificationBuilder.refNode;
+import static io.descoped.lds.core.persistence.neo4j.SpecificationBuilder.stringNode;
 
 /*
  * Unit tests meant to debug/verify Neo4j persistence provider without running the neo4j database.
